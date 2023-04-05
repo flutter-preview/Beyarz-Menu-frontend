@@ -1,0 +1,46 @@
+# Auto detect text files and perform LF normalization
+*                 text=auto
+
+# Always perform LF normalization
+*.dart            text
+*.html            text -linguist-detectable=false
+*.js              text -linguist-detectable=false
+*.cpp             text -linguist-detectable=false
+*.cmake           text -linguist-detectable=false
+*.c               text -linguist-detectable=false
+*.json            text
+*.md              text
+*.sh              text
+*.txt             text
+*.xml             text -linguist-detectable
+*.yaml            text
+
+# Make sure that these Windows files always have CRLF line endings at checkout
+*.bat             text eol=crlf -linguist-detectable=false
+*.ps1             text eol=crlf -linguist-detectable=false
+*.rc              text eol=crlf -linguist-detectable=false
+*.sln             text eol=crlf -linguist-detectable=false
+*.props           text eol=crlf -linguist-detectable=false
+*.vcxproj         text eol=crlf -linguist-detectable=false
+*.vcxproj.filters text eol=crlf -linguist-detectable=false
+
+# Including templates
+*.sln.tmpl        text eol=crlf -linguist-detectable=false
+*.props.tmpl      text eol=crlf -linguist-detectable=false
+*.vcxproj.tmpl    text eol=crlf -linguist-detectable=false
+
+# Never perform LF normalization
+*.ico             binary
+*.jar             binary
+*.png             binary
+*.zip             binary
+*.ttf             binary
+*.otf             binary
+
+# Ignore folders from statistics
+android/ -linguist-vendored
+ios/     -linguist-vendored
+linux/   -linguist-vendored
+macos/   -linguist-vendored
+web/     -linguist-vendored
+windows/ -linguist-vendored
