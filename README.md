@@ -16,7 +16,7 @@ A search engine for exploring different menus, this repo is only for the fronten
 
 ### Backend
 
-See [backend repo](https://url-to-backend-repo)
+See [backend repo](https://github.com/Beyarz/Menu-backend)
 
 ### Run in dev
 
